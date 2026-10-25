@@ -18,6 +18,15 @@ npm test
 npm run build
 ```
 
+## Publish to GitHub Pages
+
+The repository includes a GitHub Actions workflow that builds the site and publishes `dist/` to GitHub Pages when changes are pushed to `main` or `master`.
+
+1. In the GitHub repository, open **Settings → Pages**.
+2. Set **Build and deployment → Source** to **GitHub Actions**.
+3. Push the project to `main` or `master`, or run the **Deploy to GitHub Pages** workflow from the **Actions** tab.
+4. Open the Pages URL shown in the workflow deployment. The Vite build uses relative asset paths so it can run under a repository subpath.
+
 ## Data and privacy
 
 - The file is read with the browser's local `File` API and parsed in memory.
